@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Board</h1>
+	<table class="table table-striped">
+	  <thead>
+	    <tr>
+	      <th data-ng-repeat="header in dataSource.head" data-ng-bind="header"></th>
+	    </tr>
+	  </thead>
+	  <tbody>	
+	    <tr data-ng-repeat="rows in dataSource.list">
+	      <td data-ng-repeat="column in rows" data-ng-bind="column"></td>
+	    </tr>
+	  </tbody>
+	</table>
+</div>

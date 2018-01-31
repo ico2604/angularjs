@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Login</h1>
+	<form name="loginForm" data-ng-submit="login()">
+	
+	  <div class="form-group">
+	    <label for="email">이메일 주소</label>
+	    <input type="email" class="form-control" name="email" placeholder="이메일을 입력하세요" data-ng-model="user.email">
+	  </div>
+	  <div class="form-group">
+	    <label for="password">암호</label>
+	    <input type="password" class="form-control" name="password" placeholder="암호" data-ng-model="user.pw">
+	  </div>
+	  <button type="submit" class="btn btn-success">로그인</button>
+	</form>
+</div>
+

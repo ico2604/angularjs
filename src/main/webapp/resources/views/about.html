@@ -1,0 +1,19 @@
+
+<carousel></carousel>
+    
+<div class="container text-center">    
+  <h3>Web Project Info</h3><br>
+  <div class="row">
+    <div class="col-sm-4" data-ng-repeat="rows in projectInfoData.data1">
+      <img data-ng-src="{{rows.url}}" class="img-responsive" style="width:100%" alt="Image">
+      <p>{{rows.p}}</p>
+    </div>
+    
+    <div class="col-sm-4">
+      <div class="well" data-ng-repeat="text in projectInfoData.data2">
+       <p>{{text}}</p>
+      </div>
+    </div>
+    
+  </div>
+</div>

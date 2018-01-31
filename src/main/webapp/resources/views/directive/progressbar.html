@@ -1,0 +1,10 @@
+<div class="progress">
+  <div class="progress-bar active" 
+	  data-ng-class="rows.class" 
+	  role="progressbar"  
+	  style="width:{{rows.width}}%"
+	  data-ng-repeat="rows in value.data">
+	  <span data-ng-if="rows.type">{{rows.width}}%</span> 
+	  {{rows.typeName}}
+  </div>
+</div>

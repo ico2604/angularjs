@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>SignUp</h1>
+	<form name="signupForm" data-ng-submit="addUser()">
+	<div class="form-group">
+	    <label for="userNM">이름</label>
+	    <input type="text" class="form-control" name="userNM" data-ng-model="user.userNM">
+	  </div>
+	  <div class="form-group">
+	    <label for="userID">아이디</label>
+	    <input type="text" class="form-control" name="userID" data-ng-model="user.userID">
+	  </div>
+	  <div class="form-group">
+	    <label for="userPW">암호</label>
+	    <input type="password" class="form-control" name="userPW" data-ng-model="user.userPW">
+	  </div>
+	  <button type="submit" class="btn btn-success">로그인</button>
+	</form>
+</div>

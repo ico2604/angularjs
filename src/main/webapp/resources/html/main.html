@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<head-tag></head-tag>
+		<p>title : <input type="text" data-ng-model="title"></p>
+		
+		<h1>{{title}}</h1>
+		<h1 data-ng-bind="title"></h1>
+		
+		<p><input type="checkbox" data-ng-model="type"></p>
+		<P data-ng-hide="type">  hide  </P>
+		<P data-ng-show="type">  show </P>
+		<P data-ng-if="type"> if문 </P>
+		<hr>
+		<h1>반복문 연습</h1>
+		<button type="button" data-ng-click="btEvent = 'name';">ASC</button>
+		<button type="button" data-ng-click="btEvent = '-name';">DESC</button>
+		<p><input type="text" data-ng-model="search"></p>
+		<ul>
+			<li data-ng-repeat="rows in array | orderBy : btEvent | filter : search">{{$index + 1}} : {{rows.name}}</li>
+		</ul>
+		<hr>
+		<p><input type="text" data-ng-model="amount"></p>
+		<p> {{ (amount | currency : "\\" : 2) + " 원" }} </p>
+		<hr>
+		<img src="{{imgUrl}}">
+		<hr>
+		<select>
+			<option>전체</option>
+			<option>구디</option>
+			<option>앵귤라</option>
+		</select>
+		
+		<hr>
+		<!-- <select data-ng-model="selectValue" data-ng-options="rows.name for rows in array"></select> -->
+		<hr>
+		<button type="button" data-ng-click="getScope()">데이터 확인</button>
+		<select data-ng-model="selectValue">
+			<option>전체</option>
+			<option data-ng-repeat="rows in array">{{rows.name}}</option>
+		</select>
+		<p data-ng-bind="selectValue"></p>
+	</body>
+</html>

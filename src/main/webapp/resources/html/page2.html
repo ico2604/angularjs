@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+	<h1>회원 정보 내용 화면 입니다.</h1>
+<!-- 	<p>번호 : {{user.no}}</p> -->
+<!-- 	<p>이메일 : <input type="email" data-ng-model="user.email"></p> -->
+<!-- 	<p>비밀번호 : <input type="password" data-ng-model="user.pw"></p> -->
+<!-- 	<p>이름 : <input type="text" data-ng-model="user.name"></p> -->
+	
+	<hr>
+	<form name="userForm" data-ng-submit="upUser()">
+		<p>번호 : {{user.no}}</p>
+		<p>이메일 : <input type="email" data-ng-model="user.email"></p>
+		<p>비밀번호 : <input type="password" data-ng-model="user.pw"></p>
+		<p>이름 : <input type="text" data-ng-model="user.name"></p>
+		<button type="submit">수정</button>
+		<button type="button" data-ng-click="out()">회원취소</button>
+	</form>
+	
+</body>
+</html>

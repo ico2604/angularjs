@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+	<h1>게시판 수정 화면 입니다.</h1>
+	<form name="boardForm" data-ng-submit="update()">
+		<p>제목 : <input type="text" data-ng-model="board.title"></p>
+		<p>내용 : <input type="text" data-ng-model="board.contents"></p>
+		<button type="submit">수정</button>
+		<button type="button" data-ng-click="back()">돌아가기</button>
+	</form>	
+</body>
+</html>

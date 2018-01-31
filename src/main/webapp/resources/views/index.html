@@ -1,0 +1,14 @@
+<div class="container">
+   <form name="fileForm" data-ng-submit="submit()">
+      <input type="text" name="name" data-ng-model="name">
+      <input type="file" name="file" data-file="file" multiple="multiple">
+      <input type="submit" value="업로드"> 
+   </form>
+</div> 
+
+<div class="container" data-ng-repeat="rows in dataSource">
+   <div class="jumbotron">
+    <h1 data-ng-bind="rows.title"></h1>
+    <p data-ng-bind="rows.contents"></p>
+    </div>
+</div>

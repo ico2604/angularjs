@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+	<h1>게시판 화면 입니다.</h1>
+	<button type="button" data-ng-click="boardInsert()">글쓰기</button>
+	<ul class="list-group">
+		<li class="list-group-item" data-ng-repeat="rows in list_data" data-ng-click="boardDetail(rows.no)">
+			<p data-ng-bind="rows.title"></p>
+		</li>
+	</ul>
+</body>
+</html>

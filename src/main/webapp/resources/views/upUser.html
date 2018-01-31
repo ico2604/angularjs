@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>회원 수정</h1>
+	<form name="userForm" data-ng-submit="upUser()">
+	<div class="form-group">
+	    <label for="number">{{userLogin.no}}</label>
+	  </div>
+	  <div class="form-group">
+	    <label for="email">이름</label>
+	    <input type="text" class="form-control" name="name" data-ng-model="user.name">
+	  </div>
+	  <div class="form-group">
+	    <label for="email">이메일 주소</label>
+	    <input type="email" class="form-control" name="email"  data-ng-model="user.email">
+	  </div>
+	  <div class="form-group">
+	    <label for="password">암호</label>
+	    <input type="text" class="form-control" name="password" data-ng-model="user.pw" >
+	  </div>
+	  <button type="submit" class="btn btn-success">수정</button>
+	</form>
+</div>

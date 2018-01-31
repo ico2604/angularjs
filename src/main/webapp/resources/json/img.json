@@ -1,0 +1,11 @@
+{"imgData":[
+  {"type":"facebook",
+   "on":"http://public.gudi.kr/gdj7/2017-09/20170908/img/icon_facebook.svg",
+   "off":"http://public.gudi.kr/gdj7/2017-09/20170908/img/icon_facebook_white.svg"},
+  {"type":"yellow",
+   "on":"http://public.gudi.kr/gdj7/2017-09/20170908/img/icon_yellow.svg",
+   "off":"http://public.gudi.kr/gdj7/2017-09/20170908/img/icon_yellow_white.svg"},
+  {"type":"youtube",
+   "on":"http://public.gudi.kr/gdj7/2017-09/20170908/img/icon_youtube.svg",
+   "off":"http://public.gudi.kr/gdj7/2017-09/20170908/img/icon_youtube_white.svg"}
+]}
